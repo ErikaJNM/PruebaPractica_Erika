@@ -44,7 +44,7 @@ class SideController: UIViewController {
     
     @objc func buttonAction(sender: UIButton!) {
         print("Button Clic")
-       // let viewController = UIApplication.shared.keyWindow?.rootViewController as? ConfiguracionesController
+       let viewController = UIApplication.shared.keyWindow?.rootViewController as? ConfiguracionesController
     }
     
     private var button2 : UIButton = {
