@@ -8,21 +8,14 @@
 import UIKit
 import AVFoundation
 
-class ModelCell{
-    let name : String
-    var isSelected : Bool
-    
-    init(name: String, isSelected: Bool) {
-        self.name = name
-        self.isSelected = isSelected
-    }
-    init(){
-        self.name = ""
-        self.isSelected = false
-    }
-}
 class ConfiguracionesController: UIViewController {
+    @IBOutlet weak var btnVibracion2: UIButton!
+    @IBOutlet weak var btnVibracíon1: UIButton!
+    @IBOutlet weak var btnSonido2: UIButton!
+    @IBOutlet weak var btnSonido1: UIButton!
     
+    let userDefault = UserDefaults.standard
+
     var selectSource = [
         ModelCell(name: "Vibración y Sonido", isSelected: false),
         ModelCell(name: "Sólo Sonido", isSelected: false),
@@ -46,6 +39,8 @@ class ConfiguracionesController: UIViewController {
         var btnElegido = sender.titleLabel?.text
         
         if btnElegido == "Sonido 1" {
+            btnSonido1.backgroundColor = UIColor.lightGray
+            btnSonido2.backgroundColor = UIColor.white
             do{
                 let url = Bundle.main.url(forResource: "alarma-morning-mix", withExtension: "mp3")
                 player = try! AVAudioPlayer(contentsOf: url!)
@@ -54,6 +49,8 @@ class ConfiguracionesController: UIViewController {
                 print(error)
             }
         }else{
+            btnSonido2.backgroundColor = UIColor.lightGray
+            btnSonido1.backgroundColor = UIColor.white
             do{
                 let url = Bundle.main.url(forResource: "alarm-clock", withExtension: "mp3")
                 player = try! AVAudioPlayer(contentsOf: url!)
@@ -71,6 +68,8 @@ class ConfiguracionesController: UIViewController {
         var btnElegido = sender.titleLabel?.text
         
         if btnElegido == "Vibración 1"{
+            btnVibracíon1.backgroundColor = UIColor.lightGray
+            btnVibracion2.backgroundColor = UIColor.white
             let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light]
             var currentIndex = 0
             
@@ -83,6 +82,8 @@ class ConfiguracionesController: UIViewController {
                 }
             }
         }else{
+            btnVibracion2.backgroundColor = UIColor.lightGray
+            btnVibracíon1.backgroundColor = UIColor.white
             let sequence: [VibrationMode] = [.heavy, .heavy, .heavy]
             var currentIndex = 0
             
@@ -95,6 +96,14 @@ class ConfiguracionesController: UIViewController {
                 }
             }
         }
+    }
+    
+    
+    @IBAction func btnGuardar() {
+        self.userDefault.removeObject(forKey: "Sonido")
+        self.userDefault.removeObject(forKey: "Vibracion")
+        self.userDefault.set("Soy un sonido", forKey: "Sonido")
+        self.userDefault.set("Soy una vibracion", forKey: "Vibracion")
     }
     
 }

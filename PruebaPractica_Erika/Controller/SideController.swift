@@ -9,29 +9,30 @@ import UIKit
 
 class SideController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.systemOrange
-        
-        let width = UIScreen.main.bounds.width / 2
-        let height = UIScreen.main.bounds.height
-        let x = UIScreen.main.bounds.width
-        let y: CGFloat = 0
-        view.frame = CGRect(x: x, y: y, width: width, height: height)
-        view.isHidden = true
-        
-        view.addSubview(button)
-        view.addSubview(button2)
-    }
     
+    private var ImageView : UIImageView = {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 270, width: 50, height: 50))
+        imageView.image = UIImage (systemName: "gearshape.fill")
+        imageView.tintColor = UIColor.systemGray
+        imageView.translatesAutoresizingMaskIntoConstraints = true
+        
+        return imageView
+    }()
+    
+    private var ImageView2 : UIImageView = {
+        let imageView2 = UIImageView(frame: CGRect(x: 0, y: 570, width: 50, height: 50))
+        imageView2.image = UIImage (systemName: "note.text")
+        imageView2.tintColor = UIColor.systemGray
+        imageView2.translatesAutoresizingMaskIntoConstraints = true
+        
+        return imageView2
+    }()
     
     private var button : UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.title = "Configuración"
-        
-        let button = UIButton(frame: CGRect(x: 10, y: 300, width: 170, height: 70))
-        button.translatesAutoresizingMaskIntoConstraints = true
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.tintColor = UIColor.systemOrange
         button.setTitleColor(.black, for: .normal)
         button.configuration = configuration
@@ -42,17 +43,13 @@ class SideController: UIViewController {
         return button
     }()
     
-    @objc func buttonAction(sender: UIButton!) {
-        print("Button Clic")
-       let viewController = UIApplication.shared.keyWindow?.rootViewController as? ConfiguracionesController
-    }
+    
     
     private var button2 : UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.title = "Comentarios"
-        
-        let button2 = UIButton(frame: CGRect(x: 10, y: 600, width: 170, height: 70))
-        button2.translatesAutoresizingMaskIntoConstraints = true
+        let button2 = UIButton()
+        button2.translatesAutoresizingMaskIntoConstraints = false
         button2.tintColor = UIColor.systemOrange
         button2.setTitleColor(.black, for: .normal)
         button2.configuration = configuration
@@ -63,9 +60,36 @@ class SideController: UIViewController {
         return button2
     }()
     
-    @objc func buttonAction2(sender: UIButton!) {
-        print("Button Clic")
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = UIColor.systemOrange
+        
+        let width = UIScreen.main.bounds.width / 2
+        let height = UIScreen.main.bounds.height
+        let x = UIScreen.main.bounds.width
+        let y: CGFloat = 130
+        view.frame = CGRect(x: x, y: y, width: width, height: height)
+        view.isHidden = true
+        
+        [ImageView,button,ImageView2,button2].forEach(view.addSubview)
+        
+        NSLayoutConstraint.activate([
+            
+            button.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 250),
+            button.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -480),
+            button.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: 0),
+            button.leftAnchor.constraint(equalTo: ImageView.rightAnchor, constant: 0),
+            button2.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 550),
+            button2.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -180),
+            button2.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: 0),
+            button2.leftAnchor.constraint(equalTo: ImageView2.rightAnchor, constant: 0),
+        ]
+        )
     }
+    
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,6 +105,24 @@ class SideController: UIViewController {
         view.isHidden = true
     }
     
+    @objc func buttonAction(sender: UIButton!) {
+        print("Button Clic")
+        goToNextView()
+    }
+    
+    func goToNextView() {
+        let destViewController = ConfiguracionesController()
+        guard let window = UIApplication.shared.windows.first else {
+            return
+        }
+        
+        window.rootViewController = destViewController
+        window.makeKeyAndVisible()
+    }
+    
+    @objc func buttonAction2(sender: UIButton!) {
+        print("Button Comentarios")
+    }
 }
 
 

@@ -15,8 +15,9 @@ class MenuCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        imageLogo.layer.cornerRadius = 15
-        imageLogo.layer.masksToBounds = true
+        //imageLogo.layer.cornerRadius = 15
+        //imageLogo.layer.masksToBounds = true
+        imageLogo.translatesAutoresizingMaskIntoConstraints = false
         
     }
 

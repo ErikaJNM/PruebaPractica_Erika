@@ -15,7 +15,7 @@ class PrincipalController: UIViewController {
     @IBOutlet weak var btnCancelarOutlet: UIButton!
     @IBOutlet weak var lblTemporizador: UILabel!
     
-    
+    let userDefault = UserDefaults.standard
     let motionManager = CMMotionManager()
     var timer = Timer()
     var timer2 = Timer()
@@ -129,6 +129,8 @@ class PrincipalController: UIViewController {
                 reloj.Segundos = 60
                 if reloj.Horas == -1 {
                     timer.invalidate()
+                    let sonido = userDefault.string(forKey: "Sonido")
+                    print(sonido)
                     print("Termino")
                 }
             }

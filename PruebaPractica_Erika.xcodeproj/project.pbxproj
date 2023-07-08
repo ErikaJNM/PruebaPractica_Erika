@@ -22,6 +22,7 @@
 		F77719B52A5623EB0067729B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77719B42A5623EB0067729B /* Assets.xcassets */; };
 		F77719B82A5623EB0067729B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77719B62A5623EB0067729B /* LaunchScreen.storyboard */; };
 		F77719C42A5625160067729B /* PrincipalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77719C32A5625160067729B /* PrincipalController.swift */; };
+		F79212422A5940F00017502A /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79212412A5940F00017502A /* ModelCell.swift */; };
 		F7CB35562A5894FC00B8DD7B /* alarma-morning-mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7CB35552A5894FC00B8DD7B /* alarma-morning-mix.mp3 */; };
 		F7CB355D2A58A39000B8DD7B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7CB355C2A58A38F00B8DD7B /* AVFoundation.framework */; };
 		F7CB35612A58A8B600B8DD7B /* VibrationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB35602A58A8B600B8DD7B /* VibrationMode.swift */; };
@@ -48,6 +49,7 @@
 		F77719B72A5623EB0067729B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F77719B92A5623EB0067729B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77719C32A5625160067729B /* PrincipalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalController.swift; sourceTree = "<group>"; };
+		F79212412A5940F00017502A /* ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCell.swift; sourceTree = "<group>"; };
 		F7CB35552A5894FC00B8DD7B /* alarma-morning-mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alarma-morning-mix.mp3"; sourceTree = "<group>"; };
 		F7CB355C2A58A38F00B8DD7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F7CB35602A58A8B600B8DD7B /* VibrationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationMode.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				F70D9D982A57702F00FB6812 /* Reloj.swift */,
 				F7CB35602A58A8B600B8DD7B /* VibrationMode.swift */,
 				F7CB35642A58AA8B00B8DD7B /* Sounds.swift */,
+				F79212412A5940F00017502A /* ModelCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				F76F50982A5784180083FBF6 /* MenuCell.swift in Sources */,
 				F7CB35612A58A8B600B8DD7B /* VibrationMode.swift in Sources */,
 				F70D9D992A57702F00FB6812 /* Reloj.swift in Sources */,
+				F79212422A5940F00017502A /* ModelCell.swift in Sources */,
 				F70D9D9B2A5770B700FB6812 /* extensionDouble.swift in Sources */,
 				F77719AC2A5623EA0067729B /* AppDelegate.swift in Sources */,
 				F76F509F2A5795900083FBF6 /* ConfiguracionesController.swift in Sources */,
