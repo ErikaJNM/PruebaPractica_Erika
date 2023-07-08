@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F70D9D952A576AE800FB6812 /* SideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D9D942A576AE800FB6812 /* SideController.swift */; };
+		F70D9D972A576F9800FB6812 /* PrincipalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D9D962A576F9800FB6812 /* PrincipalViewModel.swift */; };
+		F70D9D992A57702F00FB6812 /* Reloj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D9D982A57702F00FB6812 /* Reloj.swift */; };
+		F70D9D9B2A5770B700FB6812 /* extensionDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D9D9A2A5770B700FB6812 /* extensionDouble.swift */; };
+		F76F50982A5784180083FBF6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F50962A5784180083FBF6 /* MenuCell.swift */; };
+		F76F50992A5784180083FBF6 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76F50972A5784180083FBF6 /* MenuCell.xib */; };
+		F76F509B2A578F170083FBF6 /* ComentariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F509A2A578F170083FBF6 /* ComentariosController.swift */; };
+		F76F509D2A5794290083FBF6 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F509C2A5794290083FBF6 /* CheckBox.swift */; };
+		F76F509F2A5795900083FBF6 /* ConfiguracionesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F509E2A5795900083FBF6 /* ConfiguracionesController.swift */; };
+		F77719AC2A5623EA0067729B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77719AB2A5623EA0067729B /* AppDelegate.swift */; };
+		F77719AE2A5623EA0067729B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77719AD2A5623EA0067729B /* SceneDelegate.swift */; };
+		F77719B32A5623EA0067729B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77719B12A5623EA0067729B /* Main.storyboard */; };
+		F77719B52A5623EB0067729B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77719B42A5623EB0067729B /* Assets.xcassets */; };
+		F77719B82A5623EB0067729B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77719B62A5623EB0067729B /* LaunchScreen.storyboard */; };
+		F77719C42A5625160067729B /* PrincipalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77719C32A5625160067729B /* PrincipalController.swift */; };
+		F7CB35562A5894FC00B8DD7B /* alarma-morning-mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7CB35552A5894FC00B8DD7B /* alarma-morning-mix.mp3 */; };
+		F7CB355D2A58A39000B8DD7B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7CB355C2A58A38F00B8DD7B /* AVFoundation.framework */; };
+		F7CB35612A58A8B600B8DD7B /* VibrationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB35602A58A8B600B8DD7B /* VibrationMode.swift */; };
+		F7CB35632A58A8F100B8DD7B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB35622A58A8F100B8DD7B /* Settings.swift */; };
+		F7CB35652A58AA8B00B8DD7B /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB35642A58AA8B00B8DD7B /* Sounds.swift */; };
+		F7CB35672A58B8D000B8DD7B /* alarm-clock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7CB35662A58B8D000B8DD7B /* alarm-clock.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F70D9D942A576AE800FB6812 /* SideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideController.swift; sourceTree = "<group>"; };
+		F70D9D962A576F9800FB6812 /* PrincipalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewModel.swift; sourceTree = "<group>"; };
+		F70D9D982A57702F00FB6812 /* Reloj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloj.swift; sourceTree = "<group>"; };
+		F70D9D9A2A5770B700FB6812 /* extensionDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDouble.swift; sourceTree = "<group>"; };
+		F76F50962A5784180083FBF6 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		F76F50972A5784180083FBF6 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		F76F509A2A578F170083FBF6 /* ComentariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentariosController.swift; sourceTree = "<group>"; };
+		F76F509C2A5794290083FBF6 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		F76F509E2A5795900083FBF6 /* ConfiguracionesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionesController.swift; sourceTree = "<group>"; };
+		F77719A82A5623EA0067729B /* PruebaPractica_Erika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaPractica_Erika.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77719AB2A5623EA0067729B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F77719AD2A5623EA0067729B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F77719B22A5623EA0067729B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F77719B42A5623EB0067729B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F77719B72A5623EB0067729B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F77719B92A5623EB0067729B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77719C32A5625160067729B /* PrincipalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalController.swift; sourceTree = "<group>"; };
+		F7CB35552A5894FC00B8DD7B /* alarma-morning-mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alarma-morning-mix.mp3"; sourceTree = "<group>"; };
+		F7CB355C2A58A38F00B8DD7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F7CB35602A58A8B600B8DD7B /* VibrationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationMode.swift; sourceTree = "<group>"; };
+		F7CB35622A58A8F100B8DD7B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F7CB35642A58AA8B00B8DD7B /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		F7CB35662A58B8D000B8DD7B /* alarm-clock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alarm-clock.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F77719A52A5623EA0067729B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CB355D2A58A39000B8DD7B /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F777199F2A5623EA0067729B = {
+			isa = PBXGroup;
+			children = (
+				F77719AA2A5623EA0067729B /* PruebaPractica_Erika */,
+				F77719A92A5623EA0067729B /* Products */,
+				F7CB355B2A58A38F00B8DD7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F77719A92A5623EA0067729B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F77719A82A5623EA0067729B /* PruebaPractica_Erika.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F77719AA2A5623EA0067729B /* PruebaPractica_Erika */ = {
+			isa = PBXGroup;
+			children = (
+				F7CB35532A58919900B8DD7B /* Utils */,
+				F77719C22A5624760067729B /* Model */,
+				F77719C12A56246D0067729B /* Controller */,
+				F77719C02A56245C0067729B /* ViewModel */,
+				F77719BF2A5624550067729B /* View */,
+				F77719AB2A5623EA0067729B /* AppDelegate.swift */,
+				F77719AD2A5623EA0067729B /* SceneDelegate.swift */,
+				F77719B42A5623EB0067729B /* Assets.xcassets */,
+				F77719B92A5623EB0067729B /* Info.plist */,
+				F70D9D9A2A5770B700FB6812 /* extensionDouble.swift */,
+				F76F509C2A5794290083FBF6 /* CheckBox.swift */,
+			);
+			path = PruebaPractica_Erika;
+			sourceTree = "<group>";
+		};
+		F77719BF2A5624550067729B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F77719B62A5623EB0067729B /* LaunchScreen.storyboard */,
+				F77719B12A5623EA0067729B /* Main.storyboard */,
+				F76F50962A5784180083FBF6 /* MenuCell.swift */,
+				F76F50972A5784180083FBF6 /* MenuCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F77719C02A56245C0067729B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F70D9D962A576F9800FB6812 /* PrincipalViewModel.swift */,
+				F7CB35622A58A8F100B8DD7B /* Settings.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F77719C12A56246D0067729B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F77719C32A5625160067729B /* PrincipalController.swift */,
+				F70D9D942A576AE800FB6812 /* SideController.swift */,
+				F76F509A2A578F170083FBF6 /* ComentariosController.swift */,
+				F76F509E2A5795900083FBF6 /* ConfiguracionesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F77719C22A5624760067729B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F70D9D982A57702F00FB6812 /* Reloj.swift */,
+				F7CB35602A58A8B600B8DD7B /* VibrationMode.swift */,
+				F7CB35642A58AA8B00B8DD7B /* Sounds.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7CB35532A58919900B8DD7B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7CB35542A58948900B8DD7B /* Sounds */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F7CB35542A58948900B8DD7B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F7CB35552A5894FC00B8DD7B /* alarma-morning-mix.mp3 */,
+				F7CB35662A58B8D000B8DD7B /* alarm-clock.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F7CB355B2A58A38F00B8DD7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7CB355C2A58A38F00B8DD7B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F77719A72A5623EA0067729B /* PruebaPractica_Erika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F77719BC2A5623EB0067729B /* Build configuration list for PBXNativeTarget "PruebaPractica_Erika" */;
+			buildPhases = (
+				F77719A42A5623EA0067729B /* Sources */,
+				F77719A52A5623EA0067729B /* Frameworks */,
+				F77719A62A5623EA0067729B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PruebaPractica_Erika;
+			productName = PruebaPractica_Erika;
+			productReference = F77719A82A5623EA0067729B /* PruebaPractica_Erika.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F77719A02A5623EA0067729B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F77719A72A5623EA0067729B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F77719A32A5623EA0067729B /* Build configuration list for PBXProject "PruebaPractica_Erika" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F777199F2A5623EA0067729B;
+			productRefGroup = F77719A92A5623EA0067729B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F77719A72A5623EA0067729B /* PruebaPractica_Erika */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F77719A62A5623EA0067729B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77719B82A5623EB0067729B /* LaunchScreen.storyboard in Resources */,
+				F7CB35672A58B8D000B8DD7B /* alarm-clock.mp3 in Resources */,
+				F77719B52A5623EB0067729B /* Assets.xcassets in Resources */,
+				F76F50992A5784180083FBF6 /* MenuCell.xib in Resources */,
+				F77719B32A5623EA0067729B /* Main.storyboard in Resources */,
+				F7CB35562A5894FC00B8DD7B /* alarma-morning-mix.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F77719A42A5623EA0067729B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70D9D952A576AE800FB6812 /* SideController.swift in Sources */,
+				F70D9D972A576F9800FB6812 /* PrincipalViewModel.swift in Sources */,
+				F7CB35632A58A8F100B8DD7B /* Settings.swift in Sources */,
+				F76F509B2A578F170083FBF6 /* ComentariosController.swift in Sources */,
+				F76F509D2A5794290083FBF6 /* CheckBox.swift in Sources */,
+				F76F50982A5784180083FBF6 /* MenuCell.swift in Sources */,
+				F7CB35612A58A8B600B8DD7B /* VibrationMode.swift in Sources */,
+				F70D9D992A57702F00FB6812 /* Reloj.swift in Sources */,
+				F70D9D9B2A5770B700FB6812 /* extensionDouble.swift in Sources */,
+				F77719AC2A5623EA0067729B /* AppDelegate.swift in Sources */,
+				F76F509F2A5795900083FBF6 /* ConfiguracionesController.swift in Sources */,
+				F7CB35652A58AA8B00B8DD7B /* Sounds.swift in Sources */,
+				F77719C42A5625160067729B /* PrincipalController.swift in Sources */,
+				F77719AE2A5623EA0067729B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F77719B12A5623EA0067729B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F77719B22A5623EA0067729B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F77719B62A5623EB0067729B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F77719B72A5623EB0067729B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F77719BA2A5623EB0067729B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F77719BB2A5623EB0067729B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F77719BD2A5623EB0067729B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ269J35Y2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PruebaPractica_Erika/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digis.PruebaPractica-Erika";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F77719BE2A5623EB0067729B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ269J35Y2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PruebaPractica_Erika/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digis.PruebaPractica-Erika";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F77719A32A5623EA0067729B /* Build configuration list for PBXProject "PruebaPractica_Erika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77719BA2A5623EB0067729B /* Debug */,
+				F77719BB2A5623EB0067729B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F77719BC2A5623EB0067729B /* Build configuration list for PBXNativeTarget "PruebaPractica_Erika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77719BD2A5623EB0067729B /* Debug */,
+				F77719BE2A5623EB0067729B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F77719A02A5623EA0067729B /* Project object */;
+}
