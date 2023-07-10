@@ -15,56 +15,17 @@ class SideController: UIViewController {
     
     var delegate: SideMenuViewControllerDelegate?
     
-    private var ImageView : UIImageView = {
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 270, width: 50, height: 50))
-        imageView.image = UIImage (systemName: "gearshape.fill")
-        imageView.tintColor = UIColor.systemGray
-        imageView.translatesAutoresizingMaskIntoConstraints = true
-        
-        return imageView
+    private var stackConfiguracion : UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
     }()
     
-    private var ImageView2 : UIImageView = {
-        let imageView2 = UIImageView(frame: CGRect(x: 0, y: 570, width: 50, height: 50))
-        imageView2.image = UIImage (systemName: "note.text")
-        imageView2.tintColor = UIColor.systemGray
-        imageView2.translatesAutoresizingMaskIntoConstraints = true
-        
-        return imageView2
+    private var stackConfiguracion1 : UIStackView = {
+        let stackView1 = UIStackView()
+        stackView1.translatesAutoresizingMaskIntoConstraints = false
+        return stackView1
     }()
-    
-    private var button : UIButton = {
-        var configuration = UIButton.Configuration.filled()
-        configuration.title = "Configuración"
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = UIColor.systemOrange
-        button.setTitleColor(.black, for: .normal)
-        button.configuration = configuration
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        button.tag = 1
-        button.backgroundColor = UIColor.lightGray
-        
-        return button
-    }()
-    
-    
-    
-    private var button2 : UIButton = {
-        var configuration = UIButton.Configuration.filled()
-        configuration.title = "Comentarios"
-        let button2 = UIButton()
-        button2.translatesAutoresizingMaskIntoConstraints = false
-        button2.tintColor = UIColor.systemOrange
-        button2.setTitleColor(.black, for: .normal)
-        button2.configuration = configuration
-        button2.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        button2.tag = 1
-        button2.backgroundColor = UIColor.lightGray
-        
-        return button2
-    }()
-    
     
     
     override func viewDidLoad() {
@@ -79,23 +40,44 @@ class SideController: UIViewController {
         view.frame = CGRect(x: x, y: y, width: width, height: height)
         view.isHidden = true
         
-        [ImageView,button,ImageView2,button2].forEach(view.addSubview)
+        [stackConfiguracion,stackConfiguracion1].forEach(view.addSubview)
         
         NSLayoutConstraint.activate([
-            
-            button.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 250),
-            button.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -480),
-            button.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: 0),
-            button.leftAnchor.constraint(equalTo: ImageView.rightAnchor, constant: 0),
-            button2.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 550),
-            button2.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -180),
-            button2.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: 0),
-            button2.leftAnchor.constraint(equalTo: ImageView2.rightAnchor, constant: 0),
-        ]
-        )
+            stackConfiguracion.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 250),
+            stackConfiguracion.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            stackConfiguracion.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+            stackConfiguracion1.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 500),
+            stackConfiguracion1.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            stackConfiguracion1.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor)
+            ])
         
+        let button = UIButton(type: .system)
+        var configuration = UIButton.Configuration.plain()
+        button.setTitle("Configuración", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        configuration.image = UIImage(systemName: "gearshape.fill")?.withTintColor(UIColor.systemGray)
+        configuration.imagePadding = 30
+        configuration.baseBackgroundColor = .systemOrange
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button.tag = 1
+        button.configuration = configuration
+        
+        stackConfiguracion.addArrangedSubview(button)
+            
+        let button1 = UIButton(type: .system)
+        var configuration1 = UIButton.Configuration.plain()
+        button1.setTitle("Comentarios", for: .normal)
+        button1.setTitleColor(.white, for: .normal)
+        
+        configuration1.image = UIImage(systemName: "note.text")?.withTintColor(.systemGray)
+        configuration1.imagePadding = 30
+        configuration1.baseBackgroundColor = .systemOrange
+        button1.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button1.tag = 1
+        button1.configuration = configuration1
+            
+        stackConfiguracion1.addArrangedSubview(button1)
     }
-    
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -115,11 +97,6 @@ class SideController: UIViewController {
         print("Button Clic")
         let btnElegido = sender.titleLabel?.text
         self.delegate?.selectedCell(btnElegido!)
-    }
-    
-    
-    @objc func buttonAction2(sender: UIButton!) {
-        print("Button Comentarios")
     }
 }
 

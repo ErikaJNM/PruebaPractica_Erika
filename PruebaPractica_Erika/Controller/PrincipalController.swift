@@ -26,12 +26,17 @@ class PrincipalController: UIViewController {
     var reloj = Reloj()
     var menuController : SideController?
     var principal : PrincipalController?
+    var player = Sounds().player
     override func viewDidLoad() {
+        btnPausarOutlet.isEnabled = true
         picker.delegate = self
         picker.dataSource = self
         lblTemporizador.isHidden = true
+        lblConfigurada.text = "Configurada Esperando para Iniciar..."
         super.viewDidLoad()
         btnPausarOutlet.setTitle("Aceptar", for: .normal)
+        btnPausarOutlet.translatesAutoresizingMaskIntoConstraints = false
+        btnPausarOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 52, weight: .bold)
         btnCancelarOutlet.isHidden = true
         lblConfigurada.isHidden = true
         motionManager.startAccelerometerUpdates()
@@ -55,9 +60,11 @@ class PrincipalController: UIViewController {
                 btnPausarOutlet.isHidden = false
                 lblConfigurada.isHidden = true
                 btnPausarOutlet.setTitle("Pausar", for: .normal)
+                btnPausarOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 52, weight: .semibold)
                 isTimeRunning = true
             }else{
-                btnPausarOutlet.setTitle("Renudar", for: .normal)
+                btnPausarOutlet.setTitle("Reanudar", for: .normal)
+                btnPausarOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 52, weight: .semibold)
             }
         }
     }
@@ -89,35 +96,22 @@ class PrincipalController: UIViewController {
                 return
             }
             
-            if picker.selectedRow(inComponent: 1) == 0 {
-                minutos = 59
-                //horas -= 1
-            }else{
-                minutos = picker.selectedRow(inComponent: 1)
-            }
+            let lblHoras = PrincipalViewModel.Cero(dato: horas)
+            let lblMinutos = PrincipalViewModel.Cero(dato: minutos)
+            var lblSegundos = PrincipalViewModel.Cero(dato: segundos)
             
-            if picker.selectedRow(inComponent: 2) == 0 {
+            if lblSegundos == "00" {
                 segundos = 60
-                //minutos -= 1
-            }else{
-                segundos = picker.selectedRow(inComponent: 2)
+                minutos -= 1
+                if lblMinutos == "00"{
+                    minutos = 59
+                    horas -= 1
+                }
             }
             
-            let lblHora = PrincipalViewModel.Cero(dato: horas)
-            var lblMinutos : String = ""
-            var lblSegundos : String = ""
-            if segundos == 60 {
-                lblSegundos = PrincipalViewModel.Cero(dato: 00)
-            }else{
-                lblSegundos = PrincipalViewModel.Cero(dato: segundos)
-            }
             
-            if minutos == 59{
-                lblMinutos = PrincipalViewModel.Cero(dato: 00)
-            }else{
-                lblMinutos = PrincipalViewModel.Cero(dato: minutos)
-            }
-            lblTemporizador.text = "\(lblHora):\(lblMinutos):\(lblSegundos)"
+            
+            lblTemporizador.text = "\(lblHoras):\(lblMinutos):\(lblSegundos)"
             lblTemporizador.isHidden = false
             reloj.Horas = horas
             reloj.Minutos = minutos
@@ -127,7 +121,7 @@ class PrincipalController: UIViewController {
             btnPausarOutlet.setTitle("Pausar", for: .normal)
             lblConfigurada.isHidden = false
             btnCancelarOutlet.isHidden = false
-            btnPausarOutlet.isHidden = false
+            btnPausarOutlet.isHidden = true
             runCoordenadas()
         }else{
             if self.resumeTapped == true {
@@ -144,7 +138,10 @@ class PrincipalController: UIViewController {
     }
     
     @IBAction func btnCancelar(_ sender: UIButton) {
+        player.pause()
         timer.invalidate()
+        timer2.invalidate()
+        btnPausarOutlet.setTitle("Aceptar", for: .normal)
         lblTemporizador.isHidden = true
         picker.selectRow(0, inComponent: 0, animated: false)
         picker.selectRow(0, inComponent: 1, animated: false)
@@ -157,7 +154,6 @@ class PrincipalController: UIViewController {
         lblTemporizador.text = "00:00:00"
         btnCancelarOutlet.isHidden = true
         btnPausarOutlet.isHidden = false
-        btnPausarOutlet.setTitle("Aceptar", for: .normal)
         lblConfigurada.isHidden = true
         let opcion = userDefault.string(forKey: "option")
         print(opcion)
@@ -184,17 +180,72 @@ class PrincipalController: UIViewController {
                     var vibracion = userDefault.string(forKey: "Vibracion") ?? "Vibración 1"
                     switch opcion {
                         case "Vibración y Sonido":
-                            Sonidos(sonido: sonido)
+                            if sonido == "Sonido 1"{
+                                do{
+                                    let url = Bundle.main.url(forResource: "alarma-morning-mix", withExtension: "mp3")
+                                    self.player = try! AVAudioPlayer(contentsOf: url!)
+                                    self.player.play()
+                                }catch{
+                                    print(error)
+                                }
+                            }else{
+                                do{
+                                    let url = Bundle.main.url(forResource: "alarm-clock", withExtension: "mp3")
+                                    self.player = try! AVAudioPlayer(contentsOf: url!)
+                                    self.player.play()
+                                }catch{
+                                    print(error)
+                                }
+                            }
                             Vibraciones(vibracion: vibracion)
                             print(sonido, vibracion)
                             break
                         case "Sólo Sonido":
-                            Sonidos(sonido: sonido)
+                            if sonido == "Sonido 1"{
+                                do{
+                                    let url = Bundle.main.url(forResource: "alarma-morning-mix", withExtension: "mp3")
+                                    self.player = try! AVAudioPlayer(contentsOf: url!)
+                                    self.player.play()
+                                }catch{
+                                    print(error)
+                                }
+                            }else{
+                                do{
+                                    let url = Bundle.main.url(forResource: "alarm-clock", withExtension: "mp3")
+                                    self.player = try! AVAudioPlayer(contentsOf: url!)
+                                    self.player.play()
+                                }catch{
+                                    print(error)
+                                }
+                            }
                             print(sonido)
                             break
                         case "Solo Vibración":
-                            Vibraciones(vibracion: vibracion)
-                            print(vibracion)
+                            if vibracion == "Vibración 1"{
+                                let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light]
+                                var currentIndex = 0
+                                
+                                let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+                                    if currentIndex < sequence.count {
+                                        Settings.vibrate(mode: sequence[currentIndex])
+                                        currentIndex += 1
+                                    } else {
+                                        timer.invalidate()
+                                    }
+                                }
+                            }else{
+                                let sequence: [VibrationMode] = [.heavy, .heavy, .heavy]
+                                var currentIndex = 0
+                                
+                                let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+                                    if currentIndex < sequence.count {
+                                        Settings.vibrate(mode: sequence[currentIndex])
+                                        currentIndex += 1
+                                    } else {
+                                        timer.invalidate()
+                                    }
+                                }
+                            }
                             break
                         default:
                             break
@@ -204,28 +255,6 @@ class PrincipalController: UIViewController {
         }
     }
 
-    func Sonidos(sonido : String){
-        var player = Sounds().player
-        
-        if sonido == "Sonido 1"{
-            do{
-                let url = Bundle.main.url(forResource: "alarma-morning-mix", withExtension: "mp3")
-                player = try! AVAudioPlayer(contentsOf: url!)
-                player.play()
-            }catch{
-                print(error)
-            }
-        }else{
-            do{
-                let url = Bundle.main.url(forResource: "alarm-clock", withExtension: "mp3")
-                player = try! AVAudioPlayer(contentsOf: url!)
-                player.play()
-            }catch{
-                print(error)
-            }
-        }
-    }
-    
     func Vibraciones(vibracion : String){
         if vibracion == "Vibración 1"{
             let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light]

@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwq-JD-dfo">
-                                <rect key="frame" x="40" y="159" width="313" height="66.333333333333314"/>
+                                <rect key="frame" x="40" y="159" width="313" height="138"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="72"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Configurada Esperando para Iniciar..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Us-tO-KlX">
-                                <rect key="frame" x="40" y="325.33333333333331" width="313" height="71.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Us-tO-KlX">
+                                <rect key="frame" x="40" y="397" width="313" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -88,7 +88,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbG-iS-Tzb">
-                                <rect key="frame" x="0.0" y="159" width="393" height="66"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="138"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pickerView>
                         </subviews>
@@ -336,12 +336,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOi-zu-79s">
-                                <rect key="frame" x="20" y="434.66666666666669" width="353" height="34.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUi-2q-Lug">
                                 <rect key="frame" x="20" y="60" width="51" height="35"/>
                                 <constraints>
@@ -357,34 +351,42 @@
                                     <action selector="btnRegresar" destination="3xl-A4-lQ3" eventType="touchUpInside" id="kfk-MT-sx1"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GWD-Qn-CnH">
+                                <rect key="frame" x="0.0" y="434.66666666666674" width="393" height="407.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="knX-gk-H1s"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="CGf-j8-xIB" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" constant="20" id="3fc-Lg-Lzc"/>
                             <constraint firstItem="knX-f7-62O" firstAttribute="top" secondItem="nrZ-od-bBU" secondAttribute="bottom" constant="50" id="DCT-iV-lE1"/>
-                            <constraint firstItem="KOi-zu-79s" firstAttribute="top" secondItem="L0F-Qn-ght" secondAttribute="bottom" constant="10" id="DP4-kJ-URV"/>
                             <constraint firstItem="vUi-2q-Lug" firstAttribute="top" secondItem="knX-gk-H1s" secondAttribute="top" constant="60" id="FV0-2w-pzP"/>
                             <constraint firstItem="CGf-j8-xIB" firstAttribute="top" secondItem="knX-f7-62O" secondAttribute="bottom" constant="10" id="IBm-Xt-P8C"/>
-                            <constraint firstItem="KOi-zu-79s" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" constant="20" id="NHu-7x-ikW"/>
                             <constraint firstItem="knX-gk-H1s" firstAttribute="trailing" secondItem="L0F-Qn-ght" secondAttribute="trailing" constant="20" id="OZO-15-qku"/>
                             <constraint firstItem="knX-gk-H1s" firstAttribute="trailing" secondItem="nrZ-od-bBU" secondAttribute="trailing" constant="134" id="W4k-jj-Cf8"/>
                             <constraint firstItem="L0F-Qn-ght" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" constant="20" id="XFg-EY-1uC"/>
                             <constraint firstItem="L0F-Qn-ght" firstAttribute="top" secondItem="CGf-j8-xIB" secondAttribute="bottom" constant="20" id="Xzk-pJ-hjY"/>
                             <constraint firstItem="nrZ-od-bBU" firstAttribute="top" secondItem="vUi-2q-Lug" secondAttribute="bottom" constant="20" id="Zim-VX-GCr"/>
+                            <constraint firstItem="knX-gk-H1s" firstAttribute="bottom" secondItem="GWD-Qn-CnH" secondAttribute="bottom" id="Zmj-cH-Una"/>
                             <constraint firstItem="nrZ-od-bBU" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" constant="134" id="ca1-Pe-aJz"/>
                             <constraint firstItem="knX-gk-H1s" firstAttribute="trailing" secondItem="knX-f7-62O" secondAttribute="trailing" constant="20" id="cfT-ch-Bto"/>
-                            <constraint firstItem="knX-gk-H1s" firstAttribute="trailing" secondItem="KOi-zu-79s" secondAttribute="trailing" constant="20" id="f6Z-Nl-tPe"/>
                             <constraint firstItem="knX-gk-H1s" firstAttribute="trailing" secondItem="CGf-j8-xIB" secondAttribute="trailing" constant="20" id="fnp-nN-cHt"/>
+                            <constraint firstItem="GWD-Qn-CnH" firstAttribute="top" secondItem="L0F-Qn-ght" secondAttribute="bottom" constant="10" id="laa-2f-uVW"/>
                             <constraint firstItem="vUi-2q-Lug" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" constant="20" id="lgr-fE-0CG"/>
+                            <constraint firstItem="GWD-Qn-CnH" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" id="oaw-HI-euu"/>
+                            <constraint firstItem="knX-gk-H1s" firstAttribute="trailing" secondItem="GWD-Qn-CnH" secondAttribute="trailing" id="q2e-eK-UOT"/>
                             <constraint firstItem="knX-f7-62O" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" constant="20" id="zWt-t0-4fE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ydG-Fd-fHH"/>
                     <connections>
                         <outlet property="fotoPrincipal" destination="nrZ-od-bBU" id="vpV-Op-tco"/>
-                        <outlet property="lblComentarios" destination="KOi-zu-79s" id="FZh-wN-Ld4"/>
                         <outlet property="lblNombre" destination="CGf-j8-xIB" id="aA9-Mq-p1K"/>
+                        <outlet property="txtViewComentarios" destination="GWD-Qn-CnH" id="fwM-mF-d24"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3S-f5-OBZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -396,6 +398,9 @@
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

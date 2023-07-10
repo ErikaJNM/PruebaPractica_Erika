@@ -8,8 +8,8 @@
 import UIKit
 
 class ComentariosController: UIViewController {
+    @IBOutlet weak var txtViewComentarios: UITextView!
     @IBOutlet weak var picker: UIPickerView!
-    @IBOutlet weak var lblComentarios: UILabel!
     
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var fotoPrincipal: UIImageView!
@@ -22,7 +22,7 @@ class ComentariosController: UIViewController {
         fotoPrincipal.image = UIImage(named: "foto")
 
         lblNombre.text = "Erika Jaquelinne Navarrete Miranda"
-        lblComentarios.text = "La prueba se me hizo muy interesante ya que utilice nuevas herramientas que me permiten utilizar la posicion de iphone."
+        txtViewComentarios.text = ""
         
     }
     
