@@ -126,12 +126,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTO-oU-OUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121" y="-47"/>
+            <point key="canvasLocation" x="-1156" y="-315"/>
         </scene>
-        <!--ConfiguracionesController-->
+        <!--Configuraciones Controller-->
         <scene sceneID="215-T5-dsc">
             <objects>
-                <viewController title="ConfiguracionesController" id="Md5-0Z-NkV" customClass="ConfiguracionesController" customModule="PruebaPractica_Erika" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Configuracion" id="Md5-0Z-NkV" customClass="ConfiguracionesController" customModule="PruebaPractica_Erika" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tua-QM-Awd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,12 +290,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckD-yT-2c1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739.69465648854964" y="-56.338028169014088"/>
+            <point key="canvasLocation" x="401" y="-315"/>
         </scene>
         <!--Comentarios Controller-->
         <scene sceneID="eRj-st-uJK">
             <objects>
-                <viewController id="3xl-A4-lQ3" customClass="ComentariosController" customModule="PruebaPractica_Erika" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Comentarios" id="3xl-A4-lQ3" customClass="ComentariosController" customModule="PruebaPractica_Erika" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMJ-Bg-DWP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,6 +352,7 @@
                             <constraint firstItem="knX-f7-62O" firstAttribute="leading" secondItem="knX-gk-H1s" secondAttribute="leading" constant="20" id="zWt-t0-4fE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ydG-Fd-fHH"/>
                     <connections>
                         <outlet property="fotoPrincipal" destination="nrZ-od-bBU" id="vpV-Op-tco"/>
                         <outlet property="lblComentarios" destination="KOi-zu-79s" id="FZh-wN-Ld4"/>
@@ -360,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3S-f5-OBZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="-35"/>
+            <point key="canvasLocation" x="401" y="387"/>
         </scene>
     </scenes>
     <resources>

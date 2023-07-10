@@ -23,16 +23,15 @@ class PrincipalController: UIViewController {
     var resumeTapped = false
     var reloj = Reloj()
     var menuController : SideController?
-    
+    var principal : PrincipalController?
     override func viewDidLoad() {
         super.viewDidLoad()
         btnPausarOutlet.setTitle("Aceptar", for: .normal)
         btnCancelarOutlet.isHidden = true
         lblConfigurada.isHidden = true
-        
         motionManager.startAccelerometerUpdates()
-        
         menuController = SideController()
+        menuController?.delegate = self
         if let menuController = menuController?.view {
             view.addSubview(menuController)
         }
@@ -111,6 +110,8 @@ class PrincipalController: UIViewController {
         btnPausarOutlet.isHidden = false
         btnPausarOutlet.setTitle("Aceptar", for: .normal)
         lblConfigurada.isHidden = true
+        let opcion = userDefault.string(forKey: "option")
+        print(opcion)
     }
     
     
@@ -129,8 +130,8 @@ class PrincipalController: UIViewController {
                 reloj.Segundos = 60
                 if reloj.Horas == -1 {
                     timer.invalidate()
-                    let sonido = userDefault.string(forKey: "Sonido")
-                    print(sonido)
+                    let opcion = userDefault.string(forKey: "option")
+                    print(opcion)
                     print("Termino")
                 }
             }
@@ -140,3 +141,15 @@ class PrincipalController: UIViewController {
 }
 
 
+extension PrincipalController : SideMenuViewControllerDelegate{
+    func selectedCell(_ btn: String) {
+        print(btn)
+        if btn == "Configuración" {
+            self.show(ConfiguracionesController().self, sender: "Configuracion")
+        }else{
+            self.show(ComentariosController().self, sender: "Comentarios")
+        }
+    }
+    
+    
+}

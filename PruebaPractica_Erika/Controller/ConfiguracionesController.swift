@@ -23,11 +23,11 @@ class ConfiguracionesController: UIViewController {
        ]
     var player = Sounds().player
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView?
     override func viewDidLoad() {
-        tableView.register(UINib(nibName: "MenuCell", bundle: .main), forCellReuseIdentifier: "MenuCell")
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView?.register(UINib(nibName: "MenuCell", bundle: .main), forCellReuseIdentifier: "MenuCell")
+        tableView?.dataSource = self
+        tableView?.delegate = self
         super.viewDidLoad()
     
     }
@@ -99,11 +99,13 @@ class ConfiguracionesController: UIViewController {
     }
     
     
-    @IBAction func btnGuardar() {
+    @IBAction func btnGuardar(op : String) {
         self.userDefault.removeObject(forKey: "Sonido")
         self.userDefault.removeObject(forKey: "Vibracion")
+        self.userDefault.removeObject(forKey: "opcion")
         self.userDefault.set("Soy un sonido", forKey: "Sonido")
         self.userDefault.set("Soy una vibracion", forKey: "Vibracion")
+        self.userDefault.set(op, forKey: "opcion")
     }
     
 }
@@ -161,7 +163,10 @@ extension ConfiguracionesController : UITableViewDelegate, UITableViewDataSource
         let currentItem = selectSource[indexPath.row]
         currentItem.isSelected = true
         tableView.reloadData()
+        
+        print(currentItem.name)
+        if currentItem.name == "Vibración y Sonido"{
+            btnGuardar(op: currentItem.name)
+        }
     }
-    
-    
 }

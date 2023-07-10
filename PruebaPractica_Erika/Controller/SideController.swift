@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol SideMenuViewControllerDelegate {
+    func selectedCell(_ btn: String)
+}
+
 class SideController: UIViewController {
     
+    var delegate: SideMenuViewControllerDelegate?
     
     private var ImageView : UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 270, width: 50, height: 50))
@@ -53,7 +58,7 @@ class SideController: UIViewController {
         button2.tintColor = UIColor.systemOrange
         button2.setTitleColor(.black, for: .normal)
         button2.configuration = configuration
-        button2.addTarget(self, action: #selector(buttonAction2), for: .touchUpInside)
+        button2.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button2.tag = 1
         button2.backgroundColor = UIColor.lightGray
         
@@ -88,6 +93,7 @@ class SideController: UIViewController {
             button2.leftAnchor.constraint(equalTo: ImageView2.rightAnchor, constant: 0),
         ]
         )
+        
     }
     
     
@@ -107,18 +113,10 @@ class SideController: UIViewController {
     
     @objc func buttonAction(sender: UIButton!) {
         print("Button Clic")
-        goToNextView()
+        let btnElegido = sender.titleLabel?.text
+        self.delegate?.selectedCell(btnElegido!)
     }
     
-    func goToNextView() {
-        let destViewController = ConfiguracionesController()
-        guard let window = UIApplication.shared.windows.first else {
-            return
-        }
-        
-        window.rootViewController = destViewController
-        window.makeKeyAndVisible()
-    }
     
     @objc func buttonAction2(sender: UIButton!) {
         print("Button Comentarios")
