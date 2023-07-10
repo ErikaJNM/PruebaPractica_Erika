@@ -8,15 +8,11 @@
 import UIKit
 
 class MenuCell: UITableViewCell {
-
-    @IBOutlet weak var btnCheckBox: CheckBox!
     @IBOutlet weak var lbltitulo: UILabel!
     @IBOutlet weak var imageLogo: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        //imageLogo.layer.cornerRadius = 15
-        //imageLogo.layer.masksToBounds = true
         imageLogo.translatesAutoresizingMaskIntoConstraints = false
         
     }

@@ -27,6 +27,7 @@ class PrincipalController: UIViewController {
     var menuController : SideController?
     var principal : PrincipalController?
     var player = Sounds().player
+    
     override func viewDidLoad() {
         btnPausarOutlet.isEnabled = true
         picker.delegate = self
@@ -34,9 +35,7 @@ class PrincipalController: UIViewController {
         lblTemporizador.isHidden = true
         lblConfigurada.text = "Configurada Esperando para Iniciar..."
         super.viewDidLoad()
-        btnPausarOutlet.setTitle("Aceptar", for: .normal)
-        btnPausarOutlet.translatesAutoresizingMaskIntoConstraints = false
-        btnPausarOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 52, weight: .bold)
+        btnPausarOutlet.setAttributedTitle(setTitle(at : "Aceptar"), for: .normal)
         btnCancelarOutlet.isHidden = true
         lblConfigurada.isHidden = true
         motionManager.startAccelerometerUpdates()
@@ -59,12 +58,11 @@ class PrincipalController: UIViewController {
                 resumeTapped = true
                 btnPausarOutlet.isHidden = false
                 lblConfigurada.isHidden = true
-                btnPausarOutlet.setTitle("Pausar", for: .normal)
+                btnPausarOutlet.setAttributedTitle(setTitle(at : "Pausar"), for: .normal)
                 btnPausarOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 52, weight: .semibold)
                 isTimeRunning = true
             }else{
-                btnPausarOutlet.setTitle("Reanudar", for: .normal)
-                btnPausarOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 52, weight: .semibold)
+                btnPausarOutlet.setAttributedTitle(setTitle(at : "Reanudar"), for: .normal)
             }
         }
     }
@@ -83,7 +81,6 @@ class PrincipalController: UIViewController {
     }
     
     @IBAction func btnPausar(_ sender: UIButton) {
-        
         
         let btnSeleccionado = sender.titleLabel?.text
         
@@ -108,17 +105,13 @@ class PrincipalController: UIViewController {
                     horas -= 1
                 }
             }
-            
-            
-            
             lblTemporizador.text = "\(lblHoras):\(lblMinutos):\(lblSegundos)"
             lblTemporizador.isHidden = false
             reloj.Horas = horas
             reloj.Minutos = minutos
             reloj.Segundos = segundos
             picker.isHidden = true
-            
-            btnPausarOutlet.setTitle("Pausar", for: .normal)
+            btnPausarOutlet.setAttributedTitle(setTitle(at : "Pausar"), for: .normal)
             lblConfigurada.isHidden = false
             btnCancelarOutlet.isHidden = false
             btnPausarOutlet.isHidden = true
@@ -126,11 +119,11 @@ class PrincipalController: UIViewController {
         }else{
             if self.resumeTapped == true {
                 timer.invalidate()
-                btnPausarOutlet.setTitle("Renudar", for: .normal)
+                btnPausarOutlet.setAttributedTitle(setTitle(at : "Reanudar"), for: .normal)
                 self.resumeTapped = false
             } else {
                 runTime()
-                btnPausarOutlet.setTitle("Pausar", for: .normal)
+                btnPausarOutlet.setAttributedTitle(setTitle(at : "Pausar"), for: .normal)
                 self.resumeTapped = true
             }
         }
@@ -141,7 +134,7 @@ class PrincipalController: UIViewController {
         player.pause()
         timer.invalidate()
         timer2.invalidate()
-        btnPausarOutlet.setTitle("Aceptar", for: .normal)
+        btnPausarOutlet.setAttributedTitle(setTitle(at : "Aceptar"), for: .normal)
         lblTemporizador.isHidden = true
         picker.selectRow(0, inComponent: 0, animated: false)
         picker.selectRow(0, inComponent: 1, animated: false)
@@ -156,7 +149,6 @@ class PrincipalController: UIViewController {
         btnPausarOutlet.isHidden = false
         lblConfigurada.isHidden = true
         let opcion = userDefault.string(forKey: "option")
-        print(opcion)
     }
     
     
@@ -165,7 +157,6 @@ class PrincipalController: UIViewController {
         reloj.Segundos -= 1
         
         lblTemporizador.text = PrincipalViewModel.timeString(time: TimeInterval(reloj.Segundos), reloj: reloj)
-        print(TimeInterval(reloj.Segundos))
         if TimeInterval(reloj.Segundos) == 0 {
             reloj.Minutos -= 1
             reloj.Segundos = 60
@@ -198,7 +189,6 @@ class PrincipalController: UIViewController {
                                 }
                             }
                             Vibraciones(vibracion: vibracion)
-                            print(sonido, vibracion)
                             break
                         case "Sólo Sonido":
                             if sonido == "Sonido 1"{
@@ -218,7 +208,6 @@ class PrincipalController: UIViewController {
                                     print(error)
                                 }
                             }
-                            print(sonido)
                             break
                         case "Solo Vibración":
                             if vibracion == "Vibración 1"{
@@ -282,9 +271,17 @@ class PrincipalController: UIViewController {
             }
         }
     }
+    
+    func setTitle(at text: String) -> NSAttributedString{
+        
+        let font = UIFont.systemFont(ofSize: 52, weight: .semibold)
+        let attributes = [NSAttributedString.Key.font: font]
+        let attributedQuote = NSAttributedString(string: text, attributes: attributes)
+        return attributedQuote
+    }
 }
 
-
+// MARK : Opciones SideMenu
 extension PrincipalController : SideMenuViewControllerDelegate{
     func selectedCell(_ btn: String) {
         print(btn)
@@ -297,7 +294,7 @@ extension PrincipalController : SideMenuViewControllerDelegate{
     
     
 }
-
+// MARK : Picker
 extension PrincipalController : UIPickerViewDelegate, UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 3

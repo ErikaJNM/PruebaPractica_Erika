@@ -14,7 +14,6 @@
 		F76F50982A5784180083FBF6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F50962A5784180083FBF6 /* MenuCell.swift */; };
 		F76F50992A5784180083FBF6 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76F50972A5784180083FBF6 /* MenuCell.xib */; };
 		F76F509B2A578F170083FBF6 /* ComentariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F509A2A578F170083FBF6 /* ComentariosController.swift */; };
-		F76F509D2A5794290083FBF6 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F509C2A5794290083FBF6 /* CheckBox.swift */; };
 		F76F509F2A5795900083FBF6 /* ConfiguracionesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F509E2A5795900083FBF6 /* ConfiguracionesController.swift */; };
 		F77719AC2A5623EA0067729B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77719AB2A5623EA0067729B /* AppDelegate.swift */; };
 		F77719AE2A5623EA0067729B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77719AD2A5623EA0067729B /* SceneDelegate.swift */; };
@@ -40,7 +39,6 @@
 		F76F50962A5784180083FBF6 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		F76F50972A5784180083FBF6 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		F76F509A2A578F170083FBF6 /* ComentariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentariosController.swift; sourceTree = "<group>"; };
-		F76F509C2A5794290083FBF6 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F76F509E2A5795900083FBF6 /* ConfiguracionesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionesController.swift; sourceTree = "<group>"; };
 		F77719A82A5623EA0067729B /* PruebaPractica_Erika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaPractica_Erika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77719AB2A5623EA0067729B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				F77719B42A5623EB0067729B /* Assets.xcassets */,
 				F77719B92A5623EB0067729B /* Info.plist */,
 				F70D9D9A2A5770B700FB6812 /* extensionDouble.swift */,
-				F76F509C2A5794290083FBF6 /* CheckBox.swift */,
 			);
 			path = PruebaPractica_Erika;
 			sourceTree = "<group>";
@@ -254,7 +251,6 @@
 				F70D9D972A576F9800FB6812 /* PrincipalViewModel.swift in Sources */,
 				F7CB35632A58A8F100B8DD7B /* Settings.swift in Sources */,
 				F76F509B2A578F170083FBF6 /* ComentariosController.swift in Sources */,
-				F76F509D2A5794290083FBF6 /* CheckBox.swift in Sources */,
 				F76F50982A5784180083FBF6 /* MenuCell.swift in Sources */,
 				F7CB35612A58A8B600B8DD7B /* VibrationMode.swift in Sources */,
 				F70D9D992A57702F00FB6812 /* Reloj.swift in Sources */,
