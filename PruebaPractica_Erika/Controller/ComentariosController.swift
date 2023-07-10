@@ -8,10 +8,12 @@
 import UIKit
 
 class ComentariosController: UIViewController {
+    @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var lblComentarios: UILabel!
     
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var fotoPrincipal: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,9 +23,14 @@ class ComentariosController: UIViewController {
 
         lblNombre.text = "Erika Jaquelinne Navarrete Miranda"
         lblComentarios.text = "La prueba se me hizo muy interesante ya que utilice nuevas herramientas que me permiten utilizar la posicion de iphone."
+        
     }
     
 
+    @IBAction func btnRegresar() {
+        dismiss(animated: true)
+    }
     
 
 }
+

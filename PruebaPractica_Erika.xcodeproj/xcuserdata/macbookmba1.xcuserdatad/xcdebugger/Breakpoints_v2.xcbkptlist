@@ -14,8 +14,8 @@
             filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "update()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "update()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "btnPausar(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "UpdateTime()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "PruebaPractica_Erika/Controller/ConfiguracionesController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -151,65 +151,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F8081421-9F38-449E-8A5F-7652277CD3FC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PruebaPractica_Erika/Controller/ConfiguracionesController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A818DCE0-2A39-4487-8560-4145350C59CC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
             landmarkName = "selectedCell(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A818DCE0-2A39-4487-8560-4145350C59CC - 68d61dd70f20665f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PruebaPractica_Erika.PrincipalController.selectedCell(Swift.String) -&gt; ()"
-                  moduleName = "PruebaPractica_Erika"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
-                  offsetFromSymbolStart = "304">
-               </Location>
-               <Location
-                  uuid = "A818DCE0-2A39-4487-8560-4145350C59CC - 68d61dd70f20665f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PruebaPractica_Erika.PrincipalController.selectedCell(Swift.String) -&gt; ()"
-                  moduleName = "PruebaPractica_Erika"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
-                  offsetFromSymbolStart = "240">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,106 +190,26 @@
             filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "selectedCell(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EEE19560-98A6-4938-BFD5-4043B172A2C5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "selectedCell(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EEE19560-98A6-4938-BFD5-4043B172A2C5 - 68d61dd70f20663e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PruebaPractica_Erika.PrincipalController.selectedCell(Swift.String) -&gt; ()"
-                  moduleName = "PruebaPractica_Erika"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "400">
-               </Location>
-               <Location
-                  uuid = "EEE19560-98A6-4938-BFD5-4043B172A2C5 - 68d61dd70f20663e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PruebaPractica_Erika.PrincipalController.selectedCell(Swift.String) -&gt; ()"
-                  moduleName = "PruebaPractica_Erika"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "304">
-               </Location>
-            </Locations>
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "PrincipalController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DCB31528-3A42-4549-9C83-65B2BF7B7602"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "selectedCell(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DCB31528-3A42-4549-9C83-65B2BF7B7602 - 68d61dd70f20667c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PruebaPractica_Erika.PrincipalController.selectedCell(Swift.String) -&gt; ()"
-                  moduleName = "PruebaPractica_Erika"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "146"
-                  endingLineNumber = "146"
-                  offsetFromSymbolStart = "240">
-               </Location>
-               <Location
-                  uuid = "DCB31528-3A42-4549-9C83-65B2BF7B7602 - 68d61dd70f20667c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PruebaPractica_Erika.PrincipalController.selectedCell(Swift.String) -&gt; ()"
-                  moduleName = "PruebaPractica_Erika"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "146"
-                  endingLineNumber = "146"
-                  offsetFromSymbolStart = "80">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -350,10 +222,484 @@
             filePath = "PruebaPractica_Erika/Controller/ConfiguracionesController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16CAFE0F-DDCA-4E93-B811-8B4E0126443D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/SideController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "buttonAction(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16CAFE0F-DDCA-4E93-B811-8B4E0126443D - ec9ca10ff74bb3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.SideController.buttonAction(sender: Swift.Optional&lt;__C.UIButton&gt;) -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/SideController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "16CAFE0F-DDCA-4E93-B811-8B4E0126443D - ec9ca10ff74bb3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.SideController.buttonAction(sender: Swift.Optional&lt;__C.UIButton&gt;) -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/SideController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "552">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "UpdateTime()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79 - 8f2c1e809a8f6efc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2352">
+               </Location>
+               <Location
+                  uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79 - 8f2c1e809a8f6efc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2344">
+               </Location>
+               <Location
+                  uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79 - 8f2c1e809a8f6efc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2372">
+               </Location>
+               <Location
+                  uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79 - 8f2c1e809a8f6efc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2360">
+               </Location>
+               <Location
+                  uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79 - 8f2c1e809a8f6efc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2376">
+               </Location>
+               <Location
+                  uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79 - 8f2c1e809a8f6efc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2628">
+               </Location>
+               <Location
+                  uuid = "C5153B0C-C904-4CB6-AA0B-C11BA08B3A79 - 8f2c1e809a8f6efc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "2640">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "794C95AE-4FF2-48A8-96BC-C1F5097F6FEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "UpdateTime()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1E01623-6DDE-46AF-B59B-9DA586EEA298"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/ConfiguracionesController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DC5A6FD-9131-4926-8A1A-524A94597B29"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/ConfiguracionesController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB433143-EFE8-4309-9A3A-A49EF039F654"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/ConfiguracionesController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84E651FA-97E8-436F-AE6D-12C52B1A3EA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "UpdateTime()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "84E651FA-97E8-436F-AE6D-12C52B1A3EA1 - 8f2c1e809a8f6fd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "3332">
+               </Location>
+               <Location
+                  uuid = "84E651FA-97E8-436F-AE6D-12C52B1A3EA1 - 8f2c1e809a8f6fd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "3276">
+               </Location>
+               <Location
+                  uuid = "84E651FA-97E8-436F-AE6D-12C52B1A3EA1 - 8f2c1e809a8f6fd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "3280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADC5D48B-353E-4603-ADDC-4FD8CBE8AAFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "Sonidos(sonido:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F29011E4-01B9-465E-A0D9-FBF802EFB10B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "Sonidos(sonido:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F29011E4-01B9-465E-A0D9-FBF802EFB10B - 5c2e065716a8d4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.Sonidos(sonido: Swift.String) -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "F29011E4-01B9-465E-A0D9-FBF802EFB10B - 5c2e065716a8d4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.Sonidos(sonido: Swift.String) -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "416">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18A33778-2402-4278-AE10-CAFA28500E48"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/ViewModel/PrincipalViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "Cero(dato:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52630D29-EBDC-4866-9871-C845DE4F4C50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "btnPausar(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52630D29-EBDC-4866-9871-C845DE4F4C50 - 775cb8bb85c33c45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.btnPausar(__C.UIButton) -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "760">
+               </Location>
+               <Location
+                  uuid = "52630D29-EBDC-4866-9871-C845DE4F4C50 - 775cb8bb85c33c45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.btnPausar(__C.UIButton) -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "804">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72584967-94A5-4C46-9C23-9DB797C37654"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaPractica_Erika/Controller/PrincipalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "UpdateTime()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72584967-94A5-4C46-9C23-9DB797C37654 - 8f2c1e809a8f9314"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "1192">
+               </Location>
+               <Location
+                  uuid = "72584967-94A5-4C46-9C23-9DB797C37654 - 8f2c1e809a8f9314"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaPractica_Erika.PrincipalController.UpdateTime() -&gt; ()"
+                  moduleName = "PruebaPractica_Erika"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba1/Documents/Erika%20Jaquelinne%20Navarrete%20Miranda%20/PruebaPractica_Erika/PruebaPractica_Erika/Controller/PrincipalController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "1108">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

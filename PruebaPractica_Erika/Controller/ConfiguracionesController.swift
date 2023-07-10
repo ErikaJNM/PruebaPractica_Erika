@@ -16,6 +16,7 @@ class ConfiguracionesController: UIViewController {
     
     let userDefault = UserDefaults.standard
 
+    var user = UserDefault()
     var selectSource = [
         ModelCell(name: "Vibración y Sonido", isSelected: false),
         ModelCell(name: "Sólo Sonido", isSelected: false),
@@ -30,15 +31,60 @@ class ConfiguracionesController: UIViewController {
         tableView?.delegate = self
         super.viewDidLoad()
     
+        
+        let opcion = userDefault.string(forKey: "opcion")
+        let sonido = userDefault.string(forKey: "Sonido")
+        let vibracion = userDefault.string(forKey: "Vibracion")
+        
+        if opcion == nil{
+            selectSource[0].isSelected = true
+        }else{
+            if opcion == selectSource[0].name{
+                selectSource[0].isSelected = true
+            }else{
+                if opcion == selectSource[1].name{
+                    selectSource[1].isSelected = true
+                }else{
+                    selectSource[2].isSelected = true
+                }
+            }
+        }
+        
+        if sonido == nil{
+            btnSonido1.backgroundColor = UIColor.systemGray
+            btnSonido2.backgroundColor = UIColor.white
+        }else{
+            if sonido == "Sonido 1"{
+                btnSonido1.backgroundColor = UIColor.systemGray
+                btnSonido2.backgroundColor = UIColor.white
+            }else{
+                btnSonido2.backgroundColor = UIColor.systemGray
+                btnSonido1.backgroundColor = UIColor.white
+            }
+        }
+        
+        if vibracion == nil{
+            btnVibracíon1.backgroundColor = UIColor.systemGray
+            btnVibracion2.backgroundColor = UIColor.white
+        }else{
+            if vibracion == "Vibración 1"{
+                btnVibracíon1.backgroundColor = UIColor.systemGray
+                btnVibracion2.backgroundColor = UIColor.white
+            }else{
+                btnVibracion2.backgroundColor = UIColor.systemGray
+                btnVibracíon1.backgroundColor = UIColor.white
+            }
+        }
     }
     
-    @IBAction func btnSonidos(_ sender: UIButton) {
-        var player1 = Sounds()
-        
+    @IBAction func btnSonidos(_ sender: UIButton) {        
         
         var btnElegido = sender.titleLabel?.text
         
         if btnElegido == "Sonido 1" {
+            self.userDefault.removeObject(forKey: "Sonido")
+            user.sonido = btnElegido!
+            self.userDefault.set(user.sonido, forKey: "Sonido")
             btnSonido1.backgroundColor = UIColor.lightGray
             btnSonido2.backgroundColor = UIColor.white
             do{
@@ -49,6 +95,9 @@ class ConfiguracionesController: UIViewController {
                 print(error)
             }
         }else{
+            self.userDefault.removeObject(forKey: "Sonido")
+            user.sonido = btnElegido!
+            self.userDefault.set(user.sonido, forKey: "Sonido")
             btnSonido2.backgroundColor = UIColor.lightGray
             btnSonido1.backgroundColor = UIColor.white
             do{
@@ -63,11 +112,17 @@ class ConfiguracionesController: UIViewController {
     }
     
     
+    @IBAction func btnRegresar() {
+        dismiss(animated: false)
+    }
     
     @IBAction func btnVibration(_ sender: UIButton) {
         var btnElegido = sender.titleLabel?.text
         
         if btnElegido == "Vibración 1"{
+            self.userDefault.removeObject(forKey: "Vibracion")
+            user.vibracion = btnElegido!
+            self.userDefault.set(user.vibracion, forKey: "Vibracion")
             btnVibracíon1.backgroundColor = UIColor.lightGray
             btnVibracion2.backgroundColor = UIColor.white
             let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light]
@@ -82,6 +137,9 @@ class ConfiguracionesController: UIViewController {
                 }
             }
         }else{
+            self.userDefault.removeObject(forKey: "Vibracion")
+            user.vibracion = btnElegido!
+            self.userDefault.set(user.vibracion, forKey: "Vibracion")
             btnVibracion2.backgroundColor = UIColor.lightGray
             btnVibracíon1.backgroundColor = UIColor.white
             let sequence: [VibrationMode] = [.heavy, .heavy, .heavy]
@@ -96,16 +154,6 @@ class ConfiguracionesController: UIViewController {
                 }
             }
         }
-    }
-    
-    
-    @IBAction func btnGuardar(op : String) {
-        self.userDefault.removeObject(forKey: "Sonido")
-        self.userDefault.removeObject(forKey: "Vibracion")
-        self.userDefault.removeObject(forKey: "opcion")
-        self.userDefault.set("Soy un sonido", forKey: "Sonido")
-        self.userDefault.set("Soy una vibracion", forKey: "Vibracion")
-        self.userDefault.set(op, forKey: "opcion")
     }
     
 }
@@ -164,9 +212,7 @@ extension ConfiguracionesController : UITableViewDelegate, UITableViewDataSource
         currentItem.isSelected = true
         tableView.reloadData()
         
-        print(currentItem.name)
-        if currentItem.name == "Vibración y Sonido"{
-            btnGuardar(op: currentItem.name)
-        }
+        user.opcion = currentItem.name
+        self.userDefault.set(user.opcion, forKey: "opcion")
     }
 }
