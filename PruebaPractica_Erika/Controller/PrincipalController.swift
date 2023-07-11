@@ -95,7 +95,7 @@ class PrincipalController: UIViewController {
             
             let lblHoras = PrincipalViewModel.Cero(dato: horas)
             let lblMinutos = PrincipalViewModel.Cero(dato: minutos)
-            var lblSegundos = PrincipalViewModel.Cero(dato: segundos)
+            let lblSegundos = PrincipalViewModel.Cero(dato: segundos)
             
             if lblSegundos == "00" {
                 segundos = 60
@@ -148,7 +148,6 @@ class PrincipalController: UIViewController {
         btnCancelarOutlet.isHidden = true
         btnPausarOutlet.isHidden = false
         lblConfigurada.isHidden = true
-        let opcion = userDefault.string(forKey: "option")
     }
     
     
@@ -166,9 +165,9 @@ class PrincipalController: UIViewController {
                 reloj.Segundos = 60
                 if reloj.Horas == -1 {
                     timer.invalidate()
-                    var opcion = userDefault.string(forKey: "opcion") ?? "Vibración y Sonido"
-                    var sonido  = userDefault.string(forKey: "Sonido") ?? "Sonido 1"
-                    var vibracion = userDefault.string(forKey: "Vibracion") ?? "Vibración 1"
+                    let opcion = userDefault.string(forKey: "opcion") ?? "Vibración y Sonido"
+                    let sonido  = userDefault.string(forKey: "Sonido") ?? "Sonido 1"
+                    let vibracion = userDefault.string(forKey: "Vibracion") ?? "Vibración 1"
                     switch opcion {
                         case "Vibración y Sonido":
                             if sonido == "Sonido 1"{
@@ -214,7 +213,7 @@ class PrincipalController: UIViewController {
                                 let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light,.light, .medium, .heavy, .medium, .light]
                                 var currentIndex = 0
                                 
-                                let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+                                let _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
                                     if currentIndex < sequence.count {
                                         Settings.vibrate(mode: sequence[currentIndex])
                                         currentIndex += 1
@@ -226,7 +225,7 @@ class PrincipalController: UIViewController {
                                 let sequence: [VibrationMode] = [.heavy, .heavy, .heavy,.heavy, .heavy, .heavy,.heavy, .heavy, .heavy,.heavy, .heavy, .heavy]
                                 var currentIndex = 0
                                 
-                                let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+                                let _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
                                     if currentIndex < sequence.count {
                                         Settings.vibrate(mode: sequence[currentIndex])
                                         currentIndex += 1
@@ -249,7 +248,7 @@ class PrincipalController: UIViewController {
             let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light, .light, .medium, .heavy, .medium, .light]
             var currentIndex = 0
             
-            let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            let _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
                 if currentIndex < sequence.count {
                     Settings.vibrate(mode: sequence[currentIndex])
                     currentIndex += 1
@@ -261,7 +260,7 @@ class PrincipalController: UIViewController {
             let sequence: [VibrationMode] = [.heavy, .heavy, .heavy, .heavy, .heavy, .heavy,.heavy, .heavy, .heavy,.heavy, .heavy, .heavy]
             var currentIndex = 0
             
-            let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            let _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
                 if currentIndex < sequence.count {
                     Settings.vibrate(mode: sequence[currentIndex])
                     currentIndex += 1

@@ -79,7 +79,7 @@ class ConfiguracionesController: UIViewController {
     
     @IBAction func btnSonidos(_ sender: UIButton) {        
         
-        var btnElegido = sender.titleLabel?.text
+        let btnElegido = sender.titleLabel?.text
         
         if btnElegido == "Sonido 1" {
             self.userDefault.removeObject(forKey: "Sonido")
@@ -117,7 +117,7 @@ class ConfiguracionesController: UIViewController {
     }
     
     @IBAction func btnVibration(_ sender: UIButton) {
-        var btnElegido = sender.titleLabel?.text
+        let btnElegido = sender.titleLabel?.text
         
         if btnElegido == "Vibración 1"{
             self.userDefault.removeObject(forKey: "Vibracion")
@@ -128,7 +128,7 @@ class ConfiguracionesController: UIViewController {
             let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light, .light, .medium, .heavy, .medium, .light]
             var currentIndex = 0
             
-            let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            let _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
                 if currentIndex < sequence.count {
                     Settings.vibrate(mode: sequence[currentIndex])
                     currentIndex += 1
@@ -145,7 +145,7 @@ class ConfiguracionesController: UIViewController {
             let sequence: [VibrationMode] = [.heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy]
             var currentIndex = 0
             
-            let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            let _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
                 if currentIndex < sequence.count {
                     Settings.vibrate(mode: sequence[currentIndex])
                     currentIndex += 1
@@ -190,15 +190,12 @@ extension ConfiguracionesController : UITableViewDelegate, UITableViewDataSource
             case 0:
                 cell.lbltitulo.text = selectSource[indexPath.row].name
                 return cell
-                break
             case 1:
                 cell.lbltitulo.text = selectSource[indexPath.row].name
                 return cell
-                break
             case 2:
                 cell.lbltitulo.text = selectSource[indexPath.row].name
                 return cell
-                break
             default:
                 break
         }
