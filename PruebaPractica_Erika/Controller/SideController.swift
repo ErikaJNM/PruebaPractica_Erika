@@ -57,7 +57,7 @@ class SideController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         configuration.image = UIImage(systemName: "gearshape.fill")?.withTintColor(UIColor.systemGray).withTintColor(.systemGray, renderingMode: .alwaysOriginal)
         button.imageEdgeInsets = UIEdgeInsets(top: 25.0, left: 25.0, bottom: 25.0, right: 25.0)
-        configuration.imagePadding = 30
+        configuration.imagePadding = 10
         configuration.baseBackgroundColor = .systemOrange
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button.tag = 1
@@ -70,7 +70,7 @@ class SideController: UIViewController {
         button1.setTitle("Comentarios", for: .normal)
         button1.setTitleColor(.white, for: .normal)
         configuration1.image = UIImage(systemName: "note.text")?.withTintColor(.systemGray, renderingMode: UIImage.RenderingMode.alwaysOriginal)
-        configuration1.imagePadding = 30
+        configuration1.imagePadding = 10
         configuration1.baseBackgroundColor = .systemOrange
         button1.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button1.tag = 1

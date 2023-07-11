@@ -22,7 +22,7 @@ class ComentariosController: UIViewController {
         fotoPrincipal.image = UIImage(named: "foto")
 
         lblNombre.text = "Erika Jaquelinne Navarrete Miranda"
-        txtViewComentarios.text = ""
+        txtViewComentarios.text = "La prueba se me hizo muy interesante, ya que puse aprueba mis habilidades y conocimientos como desarrolladora iOS, considero que se me dificulto un poco lo del menuSide, ya que me puse el reto de hacerlo de una forma diferente a lo habitual, realizándolo de manera nativa, y con vista programáticas, esto lo hice agregando una subview a la vista principal, y lo que más se me facilito fue el diseño de las vistas, es un área en la cual me considero buena."
         
     }
     

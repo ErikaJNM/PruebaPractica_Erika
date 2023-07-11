@@ -125,7 +125,7 @@ class ConfiguracionesController: UIViewController {
             self.userDefault.set(user.vibracion, forKey: "Vibracion")
             btnVibracíon1.backgroundColor = UIColor.lightGray
             btnVibracion2.backgroundColor = UIColor.white
-            let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light]
+            let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light, .light, .medium, .heavy, .medium, .light]
             var currentIndex = 0
             
             let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
@@ -142,7 +142,7 @@ class ConfiguracionesController: UIViewController {
             self.userDefault.set(user.vibracion, forKey: "Vibracion")
             btnVibracion2.backgroundColor = UIColor.lightGray
             btnVibracíon1.backgroundColor = UIColor.white
-            let sequence: [VibrationMode] = [.heavy, .heavy, .heavy]
+            let sequence: [VibrationMode] = [.heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy, .heavy]
             var currentIndex = 0
             
             let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in

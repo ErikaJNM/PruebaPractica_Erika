@@ -211,7 +211,7 @@ class PrincipalController: UIViewController {
                             break
                         case "Solo Vibración":
                             if vibracion == "Vibración 1"{
-                                let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light]
+                                let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light,.light, .medium, .heavy, .medium, .light]
                                 var currentIndex = 0
                                 
                                 let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
@@ -223,7 +223,7 @@ class PrincipalController: UIViewController {
                                     }
                                 }
                             }else{
-                                let sequence: [VibrationMode] = [.heavy, .heavy, .heavy]
+                                let sequence: [VibrationMode] = [.heavy, .heavy, .heavy,.heavy, .heavy, .heavy,.heavy, .heavy, .heavy,.heavy, .heavy, .heavy]
                                 var currentIndex = 0
                                 
                                 let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
@@ -246,7 +246,7 @@ class PrincipalController: UIViewController {
 
     func Vibraciones(vibracion : String){
         if vibracion == "Vibración 1"{
-            let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light]
+            let sequence: [VibrationMode] = [.light, .medium, .heavy, .medium, .light, .light, .medium, .heavy, .medium, .light]
             var currentIndex = 0
             
             let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
@@ -258,7 +258,7 @@ class PrincipalController: UIViewController {
                 }
             }
         }else{
-            let sequence: [VibrationMode] = [.heavy, .heavy, .heavy]
+            let sequence: [VibrationMode] = [.heavy, .heavy, .heavy, .heavy, .heavy, .heavy,.heavy, .heavy, .heavy,.heavy, .heavy, .heavy]
             var currentIndex = 0
             
             let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
